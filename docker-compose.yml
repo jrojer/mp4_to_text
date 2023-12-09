@@ -1,0 +1,16 @@
+version: "3.8"
+
+name: ling_sr_shad
+
+services:
+  pipeline:
+    build: .
+    entrypoint: python3 pipeline.py
+    working_dir: /project
+    volumes:
+      - .:/project
+  ffmpeg:
+      build: .
+      working_dir: /project
+      volumes:
+        - .:/project

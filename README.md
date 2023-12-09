@@ -1,0 +1,2 @@
+- download sample with download_sample.sh (or any mp4 file with speach), put in ./data/video
+- run the pipeline with `docker compose run pipeline`
